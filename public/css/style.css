@@ -23,6 +23,22 @@ label {
   font-weight: 600;
 }
 
+.btn-masuk {
+  width: 50%;
+  background-color: #631465;
+  color: #fff;
+  padding: 6px 12px;
+  border-radius: 8px;
+  border: none;
+  text-decoration: none;
+}
+
+.btn-masuk:hover,
+.btn-login:hover {
+  color: #fff;
+  background-color: #360936;
+}
+
 .btn-login {
   width: 100%;
   background-color: #8e6d8f;
@@ -30,10 +46,6 @@ label {
   padding: 6px 12px;
   border-radius: 8px;
   border: none;
-}
-
-.btn-login:hover {
-  background-color: #360936;
 }
 
 /* halaman login */
