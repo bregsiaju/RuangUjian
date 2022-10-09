@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
 
+* {
+  padding: 0px;
+  margin: 0px;
+}
+
 body {
   background-color: #d06cc2;
   font-family: 'Poppins', sans-serif;
@@ -66,4 +71,63 @@ label {
 
 .forget-password .container {
   width: 40%;
+}
+
+/* LANDING PAGE */
+.why-us {
+  background-color: #fff;
+  width: 100%;
+}
+
+nav {
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 20px 0px;
+}
+.navbar-brand img {
+  height: 40px;
+}
+
+.btn-purple {
+  background-color: #631465;
+  color: #fff;
+}
+
+.btn.btn-purple:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #d06cc2;
+  transform: translateY(-0.25em);
+  background-color: #360936;
+  color: #fff;
+}
+
+.btn.btn-outline-purple {
+  border: 1px solid #631465;
+  color: #631465;
+}
+
+.btn.btn-outline-purple:hover {
+  box-shadow: 0 0.5em 0.5em -0.4em #d06cc2;
+  background-color: #631465;
+  color: #fff;
+  transform: translateY(-0.25em);
+}
+
+.landing-page .content {
+  background-color: #d06cc2;
+  height: calc(100vh - 66px);
+  margin-top: 66px;
+}
+
+.col-right img {
+  width: 90%;
+}
+
+.why-us .container {
+  padding: 120px 0;
+  /* padding-bottom: 100px; */
+}
+
+.call-to-act .container {
+  margin: 40px auto;
+  padding: 36px;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
 }
