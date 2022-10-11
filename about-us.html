@@ -2,17 +2,19 @@
 <html lang="en">
 
 <head>
+  <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- bootstrap -->
+
+  <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
-  <!-- my css -->
   <link rel="stylesheet" href="/public/css/style.css">
-  <title>Welcome | Ruang Ujian</title>
+
+  <title>Tentang Kami</title>
 </head>
 
-<body class="landing-page">
+<body class="about-us">
   <nav class="navbar navbar-expand-lg bg-white fixed-top">
     <div class="container-fluid px-5">
       <a class="navbar-brand me-5" href="#"><img src="/public/images/Logo.svg" alt="logo"></a>
@@ -23,10 +25,10 @@
       <div class="collapse navbar-collapse ms-lg-3" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="">Beranda</a>
+            <a class="nav-link active" aria-current="page" href="landing-page.html">Beranda</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/about-us.html">Tentang Kami</a>
+            <a class="nav-link" href="">Tentang Kami</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">Menu Soal</a>
@@ -39,56 +41,46 @@
       </div>
     </div>
   </nav>
-  <div class="content text-white">
+  <div class="content text-black">
     <div class="container h-100">
       <div class="row row-cols-1 row-cols-sm-2 m-0 p-0 h-100 align-items-center">
         <div class="col">
           <div class="col-left w-75">
-            <h1 class="mb-4 fw-semibold">Raih dan Wujudkan Prestasimu</h1>
-            <h4>Buat belajarmu menjadi fleksibel dan menyenangkan</h4>
-            <a href="" class="btn btn-purple mt-4 w-75">Daftar Sekarang</a>
+            <h1 class="mb-4 fw-bold">Tentang Kami</h1>
+            <p align="justify">Ruang Ujian merupakan website yang bergerak
+              di bidang pendidikan.
+              Sebagai platform pendidikan, Ruang Ujian
+              menyediakan kumpulan - kumpulan soal ujian
+              untuk pelajar tingkat SMP yang bisa dikerjakan
+              dimana saja dan kapan saja.</p>
+            <a href="" class="btn btn-purple mt-4 w-75">Belajar Sekarang</a>
           </div>
         </div>
         <div class="col col-right">
-          <img src="/public/images/ilustration.svg" />
+          <img src="/public/images/about-us.svg" />
         </div>
       </div>
     </div>
   </div>
-  <div class="why-us">
+  <div class="latbel text-white">
     <div class="container h-100">
-      <!-- <h1 class="fw-semibold text-center">Kenapa Harus Belajar di Ruang Ujian?</h1> -->
       <div class="row row-cols-1 row-cols-sm-2 m-0 p-0 align-items-center">
         <div class="col col-right">
-          <img src="/public/images/cuate.svg" />
+          <img src="/public/images/pana.svg" />
         </div>
         <div class="col col-lg-6">
-          <div class="desc-service mt-sm-4 mt-0 ms-lg-3">
-            <p class="fs-2 fw-semibold">Kenapa Harus Latihan Soal di Ruang Ujian?</p>
+          <div class="desc-service mt-sm-2 mt-0 ms-lg-3">
+            <p class="fs-3 fw-bold">Bagaimana Ruang Ujian Dibentuk?</p>
             <div class="mt-5">
               <div class="d-flex">
-                <div class="checklist">
-                  <img src="/public/images/checklist.svg" alt="checklist" />
+                <div class="text-aboutus">
+                  <p class="ms-3 fs-5">Seiring dengan munculnya perkembangan teknologi di berbagai bidang, Ruang Ujian
+                    hadir sebagai penyedia platform ujian untuk para pelajar tingkat SMP.
+                    Soal-soal yang ditampilkan dalam Ruang Ujian ini dibuat menarik agar pelajar tidak merasa bosan saat
+                    melakukan latihan ujian di sini sehingga dapat meningkatkan semangat dan motivasi belajar bagi
+                    siswa.
+                  </p>
                 </div>
-                <p class="ms-3 fs-5">Fleksibel (bisa dikerjakan dimana aja) 🤩</p>
-              </div>
-              <div class="d-flex">
-                <div class="checklist">
-                  <img src="/public/images/checklist.svg" alt="checklist" />
-                </div>
-                <p class="ms-3 fs-5">Hemat waktu ⌛</p>
-              </div>
-              <div class="d-flex">
-                <div class="checklist">
-                  <img src="/public/images/checklist.svg" alt="checklist" />
-                </div>
-                <p class="ms-3 fs-5">Lengkap dengan pembahasan 💯</p>
-              </div>
-              <div class="d-flex">
-                <div class="checklist">
-                  <img src="/public/images/checklist.svg" alt="checklist" />
-                </div>
-                <p class="ms-3 fs-5">Bye bawa buku berat 😋</p>
               </div>
             </div>
           </div>
@@ -96,13 +88,6 @@
       </div>
     </div>
   </div>
-  <div class="call-to-act">
-    <div class="container bg-white d-flex justify-content-between">
-      <h3 class="mb-0 fw-semibold">Yuk, persiapkan ujianmu sekarang!</h3>
-      <a href="/login.html" class="btn btn-purple">Mulai Latihan</a>
-    </div>
-  </div>
-
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
     crossorigin="anonymous"></script>
