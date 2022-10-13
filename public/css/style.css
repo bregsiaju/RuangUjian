@@ -230,3 +230,22 @@ nav {
   background-color: #631465;
   color: #fff;
 }
+
+/*----------------------------------------
+# mulai ujian
+----------------------------------------*/
+body.start-test {
+  background-color: #a3409b;
+  color: #fff;
+  /* height: 100vh; */
+}
+
+.start-test .opening {
+  max-width: 700px;
+}
+
+.buttons a {
+  width: 250px;
+  border: 1px solid #000000;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.5);
+}
