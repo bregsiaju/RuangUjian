@@ -146,3 +146,87 @@ nav {
 .latbel .container {
   padding: 120px 0;
 }
+
+/*----------------------------------------
+# category / menu soal
+----------------------------------------*/
+.group-class {
+  margin: 50px;
+}
+
+.menu-class {
+  position: absolute;
+  top: 100px;
+  /* height: 1000px; */
+  max-width: 91vw;
+  margin-bottom: 300px;
+}
+
+.eight-grade,
+.nine-grade {
+  margin-top: 50px;
+}
+
+.nine-grade {
+  margin-bottom: 100px;
+}
+
+.mapel {
+  width: 330px;
+  height: 320px;
+  position: relative;
+  display: inline-block;
+  margin: 0 30px;
+}
+
+.mapel-title {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  bottom: 0%;
+  padding: 8%;
+  color: #000;
+  background: #ffffff;
+  border-radius: 50px 50px 0px 0px;
+  box-shadow: rgb(50 50 93 / 25%) 0px 0 10px 0px;
+}
+
+.owl-carousel .owl-nav {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.owl-carousel {
+  margin: 0 auto;
+  width: 90%;
+}
+
+#carousel-mapel .owl-prev,
+#carousel-mapel .owl-next {
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 50%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.5);
+  position: absolute;
+  border: 1px solid #631465;
+  color: #631465;
+}
+
+#carousel-mapel .owl-prev {
+  left: -60px;
+  top: -30px;
+}
+
+#carousel-mapel .owl-next {
+  right: -60px;
+  top: -30px;
+}
+
+#carousel-mapel .owl-prev:hover,
+#carousel-mapel .owl-next:hover {
+  background-color: #631465;
+  color: #fff;
+}
