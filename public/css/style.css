@@ -88,6 +88,13 @@ label {
 nav {
   box-shadow: rgba(50, 50, 93, 0.25) 0px 4px 20px 0px;
 }
+
+.dropdown .dropdown-menu {
+  position: absolute;
+  left: -60px;
+  top: 30px;
+}
+
 .navbar-brand img {
   height: 40px;
 }

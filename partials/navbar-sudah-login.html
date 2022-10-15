@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
+  <!-- my css -->
+  <link rel="stylesheet" href="../public/css/style.css">
+
+  <!-- icon font awesome -->
+  <script src="https://kit.fontawesome.com/ecde83b210.js" crossorigin="anonymous"></script>
+
+  <title>Navbar sudah login</title>
+</head>
+
+<body class="about-us">
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-lg bg-white fixed-top">
+    <div class="container-fluid px-5">
+      <a class="navbar-brand me-5" href="#"><img src="../public/images/Logo.svg" alt="logo"></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse ms-lg-3" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="">Beranda</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Tentang Kami</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Menu Soal</a>
+          </li>
+        </ul>
+        <div class="nav-item dropdown me-4">
+          <a class="dropdown-toggle btn btn-outline-purple" href="#" role="button" data-bs-toggle="dropdown"
+            aria-expanded="false"><i class="fa-solid fa-user-graduate me-2"></i> Della
+          </a>
+          <ul class="dropdown-menu">
+            <li>
+              <button class="dropdown-item">Profile</button>
+            </li>
+            <li>
+              <button class="dropdown-item" onclick="logout()">Logout</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </nav>
+  <!-- end navbar -->
+
+  <!-- bootstrap script -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8"
+    crossorigin="anonymous"></script>
+
+  <script>
+    function logout() {
+      Swal.fire({
+        title: `Logout User`,
+        html: `Are You Sure?`,
+        icon: "question",
+        confirmButtonText: `Yes, Logout`,
+        showLoaderOnConfirm: true,
+        preConfirm: () => {
+          return fetch(`/auth/logout`)
+            .then((response) => {
+              if (!response.ok) {
+                throw new Error(response.statusText);
+              }
+              return response.json();
+            })
+            .catch((error) => {
+              Swal.showValidationMessage(`Request failed: ${error}!`);
+            });
+        },
+      }).then((result) => {
+        if (result.isConfirmed) {
+          if (result.value.status == true) {
+            Swal.fire("Success!", JSON.stringify(result.value.message), "success").then(function () {
+              window.location = "/auth/signin";
+            });
+          } else {
+            Swal.fire(`Status ${result.value.status}`, JSON.stringify(result.value.message), "error");
+          }
+        }
+      });
+    }
+  </script>
+</body>
+
+</html>
