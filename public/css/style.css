@@ -421,3 +421,41 @@ button.number.done {
     font-size: 1rem;
   }
 }
+
+/*----------------------------------------
+# score dan pembahasan
+----------------------------------------*/
+body.score {
+  background-color: #a3409b;
+}
+
+.score .container-fluid {
+  margin: 50px auto;
+  width: 60%;
+}
+
+.content-score {
+  width: 70%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+img.mantap {
+  width: 40%;
+}
+
+p.score-number {
+  font-size: 3rem;
+}
+
+.btn-score {
+  width: 40%;
+  justify-content: space-between;
+}
+
+img.ornamen {
+  position: absolute;
+  top: 350px;
+  z-index: -1;
+}
