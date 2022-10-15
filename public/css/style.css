@@ -10,7 +10,9 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-/* register page */
+/*----------------------------------------
+# register
+----------------------------------------*/
 .img-fluid {
   width: 600px;
   max-height: 80%;
@@ -53,7 +55,9 @@ label {
   border: none;
 }
 
-/* halaman login */
+/*----------------------------------------
+# login
+----------------------------------------*/
 .form-text a {
   text-decoration: none;
 }
@@ -73,7 +77,9 @@ label {
   width: 40%;
 }
 
-/* LANDING PAGE */
+/*----------------------------------------
+# landing page
+----------------------------------------*/
 .why-us {
   background-color: #fff;
   width: 100%;
@@ -131,7 +137,9 @@ nav {
   border-radius: 10px;
 }
 
-/* ABOUT US */
+/*----------------------------------------
+# about us
+----------------------------------------*/
 .latbel {
   background-color: #a3409b;
   width: 100%;
@@ -145,6 +153,37 @@ nav {
 
 .latbel .container {
   padding: 120px 0;
+}
+
+section.review {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 50px;
+}
+
+.form-box {
+  border: 1px solid #000;
+  border-radius: 8px;
+  padding: 30px;
+  margin: 50px;
+}
+
+.form-profil .user {
+  border-bottom: 1px solid #777;
+  border-right: 1px solid #777;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+textarea.form-control {
+  height: 200px;
+}
+
+@media (min-width: 767px) {
+  .form-box {
+    width: 50%;
+  }
 }
 
 /*----------------------------------------
