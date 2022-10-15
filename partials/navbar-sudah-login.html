@@ -10,7 +10,7 @@
     integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
   <!-- my css -->
-  <link rel="stylesheet" href="../public/css/style.css">
+  <link rel="stylesheet" href="/css/style.css">
 
   <!-- icon font awesome -->
   <script src="https://kit.fontawesome.com/ecde83b210.js" crossorigin="anonymous"></script>
@@ -22,7 +22,7 @@
   <!-- navbar -->
   <nav class="navbar navbar-expand-lg bg-white fixed-top">
     <div class="container-fluid px-5">
-      <a class="navbar-brand me-5" href="#"><img src="../public/images/Logo.svg" alt="logo"></a>
+      <a class="navbar-brand me-5" href="#"><img src="/images/Logo.svg" alt="logo"></a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -45,9 +45,6 @@
           </a>
           <ul class="dropdown-menu">
             <li>
-              <button class="dropdown-item">Profile</button>
-            </li>
-            <li>
               <button class="dropdown-item" onclick="logout()">Logout</button>
             </li>
           </ul>
@@ -64,35 +61,7 @@
 
   <script>
     function logout() {
-      Swal.fire({
-        title: `Logout User`,
-        html: `Are You Sure?`,
-        icon: "question",
-        confirmButtonText: `Yes, Logout`,
-        showLoaderOnConfirm: true,
-        preConfirm: () => {
-          return fetch(`/auth/logout`)
-            .then((response) => {
-              if (!response.ok) {
-                throw new Error(response.statusText);
-              }
-              return response.json();
-            })
-            .catch((error) => {
-              Swal.showValidationMessage(`Request failed: ${error}!`);
-            });
-        },
-      }).then((result) => {
-        if (result.isConfirmed) {
-          if (result.value.status == true) {
-            Swal.fire("Success!", JSON.stringify(result.value.message), "success").then(function () {
-              window.location = "/auth/signin";
-            });
-          } else {
-            Swal.fire(`Status ${result.value.status}`, JSON.stringify(result.value.message), "error");
-          }
-        }
-      });
+      console.log('logout guyss');
     }
   </script>
 </body>
