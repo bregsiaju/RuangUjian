@@ -472,10 +472,11 @@ img.ornamen {
 }
 
 .total {
-  padding: 15px;
+  height: 70px;
+  width: 70px;
   border-radius: 50%;
-  background-color: #81de76;
-  -webkit-text-stroke: 0.8px #000;
+  background-color: #d9d9d9;
+  color: #000;
   font-weight: 600;
   justify-content: center;
   align-items: center;
@@ -500,6 +501,10 @@ img.ornamen {
 .bahas {
   border: 1px solid #000;
   padding: 10px;
+}
+
+.bahas img {
+  width: 35%;
 }
 
 /*----------------------------------------
