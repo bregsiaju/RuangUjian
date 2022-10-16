@@ -335,7 +335,7 @@ button.option {
   background-color: inherit;
 }
 
-button.option:focus {
+button.option.selected {
   background-color: #a3409b;
   color: #fff;
 }

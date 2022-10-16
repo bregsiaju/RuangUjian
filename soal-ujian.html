@@ -32,14 +32,12 @@
             <p class="card-text">Dalam struktur cerita narasi, pengenalan nama tokoh, latar, dan konflik merupakan
               bagian...</p>
             <div class="answer-opsi">
-              <!-- looping pilihan jawaban -->
               <button class="option w-100">
                 <div class="opsii d-flex p-2">
                   <div class="opsi me-2">A</div>
                   <div class="opsi-label">Identifikasi</div>
                 </div>
               </button>
-              <!-- looping pilihan jawaban -->
               <button class="option w-100">
                 <div class="opsii d-flex p-2">
                   <div class="opsi me-2">B</div>
@@ -61,7 +59,8 @@
             </div>
 
             <div class="button d-flex justify-content-between mt-4">
-              <a href="#" class="btn btn-purple me-2">Sebelumnya</a>
+              <!-- jika di soal pertama maka tombol 'sebelumnya' akan di-hide -->
+              <a href="#" class="btn btn-purple me-2" id="btn-before">Sebelumnya</a>
               <a href="#" class="btn btn-purple">Selanjutnya</a>
             </div>
           </div>
@@ -78,14 +77,34 @@
       <button class="number done">1</button>
       <button class="number done">2</button>
       <button class="number active">3</button>
-      <button class="number">4</button>
+      <button class="number active done">4</button>
       <button class="number">5</button>
     </div>
   </div>
 
+  <!-- bootstrap -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3"
     crossorigin="anonymous"></script>
+  <!-- jquery -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- own script -->
+  <script>
+    let opsiButton = document.getElementsByClassName('option');
+    $(opsiButton).on('click', function () {
+      $(opsiButton).removeClass('selected');
+      $(this).addClass('selected');
+    });
+
+    let btnBefore = document.getElementById('btn-before');
+    let nomorSoal = 1; // ini bisa kan ya diambil dari nomor soal dari backend?
+    if (nomorSoal !== 1) {
+      btnBefore.style.cssText = 'visibility: visible;';
+    } else {
+      btnBefore.style.cssText = 'visibility: hidden;';
+    }
+  </script>
 </body>
 
 </html>
