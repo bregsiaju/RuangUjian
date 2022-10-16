@@ -606,3 +606,18 @@ body.admin {
   max-height: calc(100% - 85px);
   overflow: auto;
 }
+
+/*----------------------------------------
+# dashboard / admin / kelas / pages
+----------------------------------------*/
+.dashboard-content .kelas {
+  background: #f5e3f3;
+  height: 20%;
+  padding: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
