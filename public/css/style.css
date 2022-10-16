@@ -402,6 +402,11 @@ button.number.done {
   background-color: #d9d9d9;
 }
 
+button.number.active.done {
+  border: 2px solid #3c0a49;
+  background-color: #d9d9d9;
+}
+
 .img-option {
   max-width: 40%;
   border-radius: 5px;
@@ -572,6 +577,32 @@ body.admin {
   overflow: auto;
 }
 
-.tabel-user::-webkit-scrollbar {
+.tabel-user::-webkit-scrollbar,
+.group-notif::-webkit-scrollbar {
   display: none;
+}
+
+.dropdown-toggle-split {
+  margin-left: -10px;
+}
+
+/*----------------------------------------
+# dashboard / admin / notification
+----------------------------------------*/
+.notif {
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  border-radius: 10px;
+  padding: 10px;
+  margin-bottom: 5px;
+}
+
+.notif .fa-user-graduate {
+  border: 1px solid #000;
+  padding: 5px;
+  border-radius: 50%;
+}
+
+.group-notif {
+  max-height: calc(100% - 85px);
+  overflow: auto;
 }

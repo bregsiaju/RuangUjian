@@ -25,13 +25,13 @@
           <div class="nav-admin d-flex flex-column justify-content-between">
             <img src="../public/images/Logo.svg" class="logo img-fluid" alt="logo">
             <div class="navigation d-flex flex-column">
-              <a href="" class="nav-user">
-                <button class="btn btn-secondary active">
+              <a href="dashboard.html" class="nav-user">
+                <button class="btn btn-secondary">
                   <i class="fa-solid fa-user-group me-2"></i> User
                 </button>
               </a>
-              <a href="notification.html" class="nav-user">
-                <button class="btn btn-secondary">
+              <a href="" class="nav-user">
+                <button class="btn btn-secondary active">
                   <i class="fa-solid fa-bell me-2"></i> Notification
                 </button>
               </a>
@@ -64,42 +64,32 @@
         </div>
         <div class="col col-10 p-0">
           <div class="dashboard-content bg-white">
-            <h3 class="fw-semibold">User Account</h3>
-            <div class="tabel-user">
-              <table class="table table-striped">
-                <thead>
-                  <tr>
-                    <th scope="col">Email</th>
-                    <th scope="col">Name</th>
-                    <th scope="col">Action</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>fawwazzzz@gmail.com</td>
-                    <td>Fawwaz</td>
-                    <td><a href="/deleteuser/id"><i class="fa-solid fa-trash text-danger"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>bregsia@gmail.com</td>
-                    <td>Bregsi AJ</td>
-                    <td><a href="/deleteuser/id"><i class="fa-solid fa-trash text-danger"></i></a></td>
-                  </tr>
-                  <tr>
-                    <td>dellaatikaa@gmail.com</td>
-                    <td>Dellaaa</td>
-                    <td><a href="/deleteuser/id"><i class="fa-solid fa-trash text-danger"></i></a></td>
-                  </tr>
-                </tbody>
-              </table>
+            <h3 class="fw-semibold">Messages</h3>
+            <hr>
+            <div class="group-notif">
+              <!-- jika sudah ada review-nya -->
+              <!-- per message -->
+              <div class="notif">
+                <div class="d-flex justify-content-between">
+                  <p class="d-flex align-items-center fw-semibold">
+                    <i class="fa-solid fa-user-graduate me-2"></i> Nama User
+                  </p>
+                  <p>createdAt</p>
+                </div>
+                <p class="m-0">masuukkkk</p>
+              </div>
+              <!-- end per message -->
+
+              <!-- jika review-nya kosong -->
+              <div class="text-center fw-bold fs-2">
+                No user reviews yet!
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
   </div>
-
-
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
