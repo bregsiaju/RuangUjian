@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Admin | Ruang Ujian</title>
+  <!-- icon -->
+  <link rel="icon" href="/images/icon-logo.svg" type="image/x-icon">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/ecde83b210.js" crossorigin="anonymous"></script>
+  <!-- my css -->
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body class="admin">
+  <div class="container-fluid">
+    <div class="admin-content d-block">
+      <div class="row p-0">
+        <div class="col col-2 p-0">
+          <div class="nav-admin d-flex flex-column justify-content-between">
+            <img src="/images/Logo.svg" class="logo img-fluid" alt="logo">
+            <div class="navigation d-flex flex-column">
+              <a href="" class="nav-user">
+                <button class="btn btn-secondary active">
+                  <i class="fa-solid fa-user-group me-2"></i> User
+                </button>
+              </a>
+              <a href="" class="nav-user">
+                <button class="btn btn-secondary">
+                  <i class="fa-solid fa-bell me-2"></i> Notification
+                </button>
+              </a>
+              <div class="dropdown-center nav-user">
+                <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  <i class="fa-regular fa-newspaper me-2"></i> Pages
+                </button>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Kelas 7</a></li>
+                  <li><a class="dropdown-item" href="#">Kelas 8</a></li>
+                  <li><a class="dropdown-item" href="#">Kelas 9</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="admin-logout" onclick="logout()">
+              <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Logout
+            </div>
+          </div>
+        </div>
+        <div class="col col-10 p-0">
+          <div class="dashboard-content bg-white">
+            <h3 class="fw-semibold">User Account</h3>
+            <div class="tabel-user">
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Email</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>fawwazzzz@gmail.com</td>
+                    <td>Fawwaz</td>
+                    <td><a href="/deleteuser/id"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>bregsia@gmail.com</td>
+                    <td>Bregsi AJ</td>
+                    <td><a href="/deleteuser/id"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                  </tr>
+                  <tr>
+                    <td>dellaatikaa@gmail.com</td>
+                    <td>Dellaaa</td>
+                    <td><a href="/deleteuser/id"><i class="fa-solid fa-trash text-danger"></i></a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
