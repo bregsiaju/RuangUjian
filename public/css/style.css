@@ -583,7 +583,8 @@ body.admin {
 }
 
 .tabel-user::-webkit-scrollbar,
-.group-notif::-webkit-scrollbar {
+.group-notif::-webkit-scrollbar,
+.dashboard-mapel::-webkit-scrollbar {
   display: none;
 }
 
@@ -631,5 +632,49 @@ body.admin {
   justify-content: space-between;
   align-items: center;
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 20px;
+}
+
+.top-mapel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top-mapel .left:hover {
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.dashboard-mapel .btn.btn-secondary {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: black;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.dashboard-mapel .btn.btn-secondary.close {
+  background-color: #fff;
+}
+
+.list-mapel {
+  background-color: #e0e0e0;
+  border-color: #e0e0e0;
+  color: black;
+  padding: 20px;
+}
+
+.mapel-satuan {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 15px;
+  padding-right: 48px;
+  padding-left: 20px;
+}
+
+.dashboard-mapel {
+  max-height: calc(100% - 75px);
+  overflow: auto;
   border-radius: 20px;
 }
