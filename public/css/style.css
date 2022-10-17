@@ -714,5 +714,9 @@ body.soal-baru {
   border-radius: 25px;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: 60px;
+}
+
+.question-box textarea {
+  height: 100px;
 }

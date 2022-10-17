@@ -36,65 +36,90 @@
         <!-- left side content -->
         <div class="col-sm-8 p-4">
           <!-- tambah 1 soal -->
-          <div class="bg-white p-4 mb-5">
+          <div class="bg-white p-4 mb-3">
             <div class="question-box">
               <!-- input pertanyaan -->
-              <label for="question" class="form-label fs-4">Soal 1</label>
-              <div class="mb-3 area-question">
+              <div class="mb-4 area-question">
+                <label for="question" class="form-label fs-4">Soal 1</label>
                 <textarea type="text" class="form-control" placeholder="Write your question here"
-                  aria-describedby="button-addon2" name="question"></textarea>
-                <button class="btn btn-textarea" type="button" id="button-addon2">
+                  name="question"></textarea>
+                <button class="btn btn-textarea" type="button" id="button-addon2"
+                  onclick="document.getElementById('imgSoal').click()">
                   <img src="../public/images/image-add.svg" alt="icon img upload">
                 </button>
+                <div>
+                  <div class="form-text text-primary">Tambahkan gambar</div>
+                  <input type="file" accept="image/*" class="form-control form-control-sm" name="imgSoal" id="imgSoal">
+                </div>
               </div>
               <!-- end input pertanyaan -->
-
+              <hr>
               <!-- input opsi -->
               <div class="mb-3 option-admin">
-                <label for="option1" class="form-label">Opsi 1</label>
-                <input type="text" class="form-control" placeholder="Masukkan opsi jawaban"
-                  aria-describedby="button-addon2" name="option1" id="option1">
-                <button class="btn btn-secondary" type="button" id="button-addon2">
+                <label for="option1" class="form-label">Opsi A</label>
+                <input type="text" class="form-control" placeholder="Masukkan opsi" name="option1" id="option1">
+                <button class="btn btn-secondary" type="button" id="button-addon2"
+                  onclick="document.getElementById('imgOpsiA').click()">
                   <img src="../public/images/image-add.svg" alt="icon img upload">
                 </button>
+                <div>
+                  <div class="form-text text-primary">Tambahkan gambar</div>
+                  <input type="file" accept="image/*" class="form-control form-control-sm" name="imgOpsiA"
+                    id="imgOpsiA">
+                </div>
               </div>
               <!-- end input opsi -->
 
               <!-- input opsi -->
               <div class="mb-3 option-admin">
-                <label for="option2" class="form-label">Opsi 2</label>
-                <input type="text" class="form-control" placeholder="Masukkan opsi jawaban"
-                  aria-describedby="button-addon2" name="option2" id="option2">
-                <button class="btn btn-secondary" type="button" id="button-addon2">
+                <label for="option2" class="form-label">Opsi B</label>
+                <input type="text" class="form-control" placeholder="Masukkan opsi" name="option2" id="option2">
+                <button class="btn btn-secondary" type="button" id="button-addon2"
+                  onclick="document.getElementById('imgOpsiB').click()">
                   <img src="../public/images/image-add.svg" alt="icon img upload">
                 </button>
+                <div>
+                  <div class="form-text text-primary">Tambahkan gambar</div>
+                  <input type="file" accept="image/*" class="form-control form-control-sm" name="imgOpsiB"
+                    id="imgOpsiB">
+                </div>
               </div>
               <!-- end input opsi -->
 
               <!-- input opsi -->
               <div class="mb-3 option-admin">
-                <label for="option3" class="form-label">Opsi 3</label>
-                <input type="text" class="form-control" placeholder="Masukkan opsi jawaban"
-                  aria-describedby="button-addon2" name="option3" id="option3">
-                <button class="btn btn-secondary" type="button" id="button-addon2">
+                <label for="option3" class="form-label">Opsi C</label>
+                <input type="text" class="form-control" placeholder="Masukkan opsi" name="option3" id="option3">
+                <button class="btn btn-secondary" type="button" id="button-addon2"
+                  onclick="document.getElementById('imgOpsiC').click()">
                   <img src="../public/images/image-add.svg" alt="icon img upload">
                 </button>
+                <div>
+                  <div class="form-text text-primary">Tambahkan gambar</div>
+                  <input type="file" accept="image/*" class="form-control form-control-sm" name="imgOpsiC"
+                    id="imgOpsiC">
+                </div>
               </div>
               <!-- end input opsi -->
 
               <!-- input opsi -->
-              <div class="mb-3 option-admin">
-                <label for="option4" class="form-label">Opsi 4</label>
-                <input type="text" class="form-control" placeholder="Masukkan opsi jawaban"
-                  aria-describedby="button-addon2" name="option4" id="option4">
-                <button class="btn btn-secondary" type="button" id="button-addon2">
+              <div class="pb-3 option-admin">
+                <label for="option4" class="form-label">Opsi D</label>
+                <input type="text" class="form-control" placeholder="Masukkan opsi" name="option4" id="option4">
+                <button class="btn btn-secondary" type="button" id="button-addon2"
+                  onclick="document.getElementById('imgOpsiD').click()">
                   <img src="../public/images/image-add.svg" alt="icon img upload">
                 </button>
+                <div>
+                  <div class="form-text text-primary">Tambahkan gambar</div>
+                  <input type="file" accept="image/*" class="form-control form-control-sm" name="imgOpsiD"
+                    id="imgOpsiD">
+                </div>
               </div>
               <!-- end input opsi -->
-
-              <!-- input opsi -->
-              <div class="mb-3 pt-4">
+              <hr>
+              <!-- input kunci jawaban -->
+              <div class="mb-3 pt-3">
                 <label for="answer" class="form-label">Kunci Jawaban</label>
                 <select class="form-select" required aria-label="select example" name="answer" id="answer">
                   <option value="A">A</option>
@@ -103,27 +128,27 @@
                   <option value="D">D</option>
                 </select>
               </div>
-              <!-- end input opsi -->
+              <!-- end input kunci jawaban -->
 
               <!-- input pembahasan -->
               <div class="mb-3 area-question">
                 <label for="pembahasan" class="form-label">Pembahasan</label>
                 <textarea type="text" class="form-control" placeholder="Add explanation for the correct answer"
-                  aria-describedby="button-addon2" name="pembahasan" id="pembahasan"></textarea>
-                <button class="btn btn-textarea" type="button" id="button-addon2">
+                  name="pembahasan"></textarea>
+                <button class="btn btn-textarea" type="button" id="button-addon2"
+                  onclick="document.getElementById('imgPembahasan').click()">
                   <img src="../public/images/image-add.svg" alt="icon img upload">
                 </button>
+                <div>
+                  <div class="form-text text-primary">Tambahkan gambar</div>
+                  <input type="file" accept="image/*" class="form-control form-control-sm" name="imgPembahasan"
+                    id="imgPembahasan">
+                </div>
               </div>
               <!-- end input pembahasan -->
             </div>
           </div>
           <!-- end tambah 1 soal -->
-
-          <!-- tombol tambah soal selanjutnya -->
-          <div class="d-flex justify-content-end my-4">
-            <button class="btn btn-purple">Tambah soal baru</button>
-          </div>
-          <!-- end tombol tambah soal selanjutnya -->
         </div>
         <!-- end left side content -->
 
@@ -143,10 +168,6 @@
                   <option value="6">Ilmu Pengetahuan Alam</option>
                 </select>
               </div>
-              <!-- <div class="mb-3">
-                <label for="subjectImage" class="form-label">Featured Image</label>
-                <input class="form-control" type="file" name="subjectImage" id="subjectImage">
-              </div> -->
             </div>
           </div>
         </div>
