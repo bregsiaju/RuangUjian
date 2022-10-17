@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add New Pages</title>
+  <!-- icon -->
+  <link rel="icon" href="../public/images/icon-logo.svg" type="image/x-icon">
+  <!-- bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+  <!-- font awesome icon -->
+  <script src="https://kit.fontawesome.com/ecde83b210.js" crossorigin="anonymous"></script>
+  <!-- my css -->
+  <link rel="stylesheet" href="../public/css/style.css">
+</head>
+
+<body class="soal-baru">
+  <form action="">
+    <!-- navbar -->
+    <nav class="navbar fixed-top">
+      <div class="container-fluid px-5">
+        <a href="" class="navbar-brand text-white"><i class="fa-solid fa-angle-left"></i> New Page</a>
+        <div class="d-flex">
+          <button type="submit" class="btn btn-outline-light">Publish</button>
+        </div>
+      </div>
+    </nav>
+    <!-- end navbar -->
+
+    <!-- content -->
+    <div class="content container-fluid px-5">
+      <div class="row row-cols-1 row-cols-sm-2">
+        <!-- left side content -->
+        <div class="col-sm-8 p-4">
+          <div class="add-question bg-white p-4">
+            <div class="question-box">
+              <!-- input pertanyaan -->
+              <label for="question" class="form-label fs-4">Soal 1</label>
+              <div class="mb-3 area-question">
+                <textarea type="text" class="form-control" placeholder="Write your question here"
+                  aria-describedby="button-addon2" name="question"></textarea>
+                <button class="btn btn-textarea" type="button" id="button-addon2">
+                  <img src="../public/images/image-add.svg" alt="icon img upload">
+                </button>
+              </div>
+              <!-- end input pertanyaan -->
+
+              <!-- input opsi -->
+              <div class="mb-3 option-admin">
+                <label for="option1" class="form-label">Option 1</label>
+                <input type="text" class="form-control" placeholder="Type the option" aria-label="Type the option"
+                  aria-describedby="button-addon2" name="option1" id="option1">
+                <button class="btn btn-secondary" type="button" id="button-addon2">
+                  <img src="../public/images/image-add.svg" alt="icon img upload">
+                </button>
+              </div>
+              <!-- end input opsi -->
+
+              <!-- input opsi -->
+              <div class="mb-3 option-admin">
+                <label for="option2" class="form-label">Option 2</label>
+                <input type="text" class="form-control" placeholder="Type the option" aria-label="Type the option"
+                  aria-describedby="button-addon2" name="option2" id="option2">
+                <button class="btn btn-secondary" type="button" id="button-addon2">
+                  <img src="../public/images/image-add.svg" alt="icon img upload">
+                </button>
+              </div>
+              <!-- end input opsi -->
+
+              <!-- input opsi -->
+              <div class="mb-3 option-admin">
+                <label for="option3" class="form-label">Option 3</label>
+                <input type="text" class="form-control" placeholder="Type the option" aria-label="Type the option"
+                  aria-describedby="button-addon2" name="option3" id="option3">
+                <button class="btn btn-secondary" type="button" id="button-addon2">
+                  <img src="../public/images/image-add.svg" alt="icon img upload">
+                </button>
+              </div>
+              <!-- end input opsi -->
+
+              <!-- input opsi -->
+              <div class="mb-3 option-admin">
+                <label for="option4" class="form-label">Option 4</label>
+                <input type="text" class="form-control" placeholder="Type the option" aria-label="Type the option"
+                  aria-describedby="button-addon2" name="option4" id="option4">
+                <button class="btn btn-secondary" type="button" id="button-addon2">
+                  <img src="../public/images/image-add.svg" alt="icon img upload">
+                </button>
+              </div>
+              <!-- end input opsi -->
+
+              <!-- input pembahasan -->
+              <div class="mb-3 area-question pt-4">
+                <label for="pembahasan" class="form-label">Pembahasan</label>
+                <textarea type="text" class="form-control" placeholder="Add explanation for the correct answer"
+                  aria-describedby="button-addon2" name="pembahasan" id="pembahasan"></textarea>
+                <button class="btn btn-textarea" type="button" id="button-addon2">
+                  <img src="../public/images/image-add.svg" alt="icon img upload">
+                </button>
+              </div>
+              <!-- end input pembahasan -->
+            </div>
+          </div>
+          <!-- tombol tambah soal selanjutnya -->
+          <div class="d-flex justify-content-end my-4">
+            <button class="btn btn-purple">Add New Number</button>
+          </div>
+          <!-- end tombol tambah soal selanjutnya -->
+        </div>
+        <!-- end left side content -->
+
+        <!-- right side content -->
+        <div class="col-sm-4 p-4">
+          <div class="add-subject bg-white p-4">
+            <div>
+              <div class="mb-3">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" required aria-label="select example" name="subject" id="subject">
+                  <option value="" disabled selected>Choose relevant subjects</option>
+                  <option value="1">Bahasa Indonesia</option>
+                  <option value="2">Matematika</option>
+                  <option value="3">Bahasa Inggris</option>
+                  <option value="4">Kewarganegaraan</option>
+                  <option value="5">Ilmu Pengetahuan Sosial</option>
+                  <option value="6">Ilmu Pengetahuan Alam</option>
+                </select>
+              </div>
+              <div class="mb-3">
+                <label for="subjectImage" class="form-label">Featured Image</label>
+                <input class="form-control" type="file" name="subjectImage" id="subjectImage">
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- end right side content -->
+      </div>
+    </div>
+    <!-- end content -->
+  </form>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

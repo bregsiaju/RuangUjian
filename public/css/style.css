@@ -678,3 +678,41 @@ body.admin {
   overflow: auto;
   border-radius: 20px;
 }
+
+/*----------------------------------------
+# admin / tambah soal baru / new pages
+----------------------------------------*/
+body.soal-baru {
+  background-color: #d9d9d9;
+}
+
+.soal-baru .navbar {
+  background-color: #a3409b;
+}
+
+.soal-baru .content {
+  margin-top: 60px;
+}
+
+.option-admin,
+.area-question {
+  position: relative;
+}
+
+.option-admin .btn.btn-secondary {
+  background-color: inherit;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  top: 31px;
+}
+
+.area-question .btn.btn-textarea {
+  background-color: inherit;
+  border: none;
+  border-radius: 25px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
