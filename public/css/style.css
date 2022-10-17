@@ -589,6 +589,13 @@ body.admin {
 
 .dropdown-toggle-split {
   margin-left: -10px;
+  background-color: inherit;
+  border: none;
+}
+
+.dropdown-toggle-split::after {
+  margin-top: 16px;
+  color: #fff;
 }
 
 /*----------------------------------------
